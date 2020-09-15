@@ -259,16 +259,16 @@ Paper :
 <script type="text/javascript">
 	function hnsqdwn()
 	{
-		var x = document.getElementById("hns").value;
-		var y = document.getElementById("paper").value;             
+		var x = document.getElementById("hns").value.toLowerCase();
+		var y = document.getElementById("paper").value.toLowerCase();             
 
   		window.open("qn_hns/" + x + y + ".pdf")
 	}
 
 	function genqdwn()
 	{
-		var x = document.getElementById("gen").value;
-		var y = document.getElementById("paper1").value;             
+		var x = document.getElementById("gen").value.toLowerCase();
+		var y = document.getElementById("paper1").value.toLowerCase();             
 
   		window.open("qn_gen/" + x + y + ".pdf")
 	}
