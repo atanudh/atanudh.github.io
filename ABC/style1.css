@@ -1,6 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
 
+table, th {
+  	border-collapse: collapse;
+ 	height: 10%;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+td {
+  	border-collapse: collapse;
+ 	height: 30%;
+	padding: 10px;
+  	text-align: left;
+}
 
 
 body{
@@ -211,16 +224,16 @@ width:810;
  text-shadow:1px 1px #000;
  color:#FFF;
  background: #BB4B19  url(../../images/pnga.png) left no-repeat;
- background:#BB4B19;
- background:#8b2b11;
+ /*background:#BB4B19;*/
+  /*background:#8b2b11;*/
  border: 1px solid #3c3c3c;
   z-index:999;
 }
 
-#nav li a:hover {
+.nav li a:hover {
 	
 
-background: #BB4B19  url(../../images/png.png) left no-repeat;
+background: white  url(../../images/png.png) left no-repeat;
 }
 #nav li.current {
 	
@@ -240,7 +253,7 @@ background: #BB4B19  url(../../images/png.png) left no-repeat;
 }
 
 #nav li:hover > ul {
- display: hide;
+ display: block;
   z-index:999;
 }
 
@@ -661,108 +674,196 @@ background: url(../../images/right.gif) no-repeat 97% 50%;
 }
 
 
-nav {    
+
+
+
+.menu-wrapper, .menu a{
+    background-color: Tomato;
+    width: 100%;
+    color: #fff;
+}
+
+.menu::after{
+    content: '';
+    clear: both;
     display: block;
-    text-align: center;
-  }
-  nav ul {
-    margin: 0;
-    padding:0;
-    list-style: none;
-  }
-  .nav a {
-    display:block; 
-    background: #111; 
-    color:#fff; 
+}
+
+.menu a{
+    display: block;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     text-decoration: none;
-    padding: .8em 1.8em;
-    <!--text-transform: uppercase;-->
-    font-size: 100%;letter-spacing: 2px;
-    text-shadow: 0 -1px 0 #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.menu li{
     position: relative;
-  }
-  .nav{  
-    vertical-align: top; 
-    display: inline-block;
-    box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px #fff;
-    border-radius:6px;
-  }
-  .nav li{position: relative;}
-  .nav > li { 
-    float:left; 
-    border-bottom: 4px #aaa solid; 
-    margin-right: 1px; 
-  } 
-  .nav > li > a { 
-    margin-bottom:1px;
-    box-shadow:inset 0 2em .33em -.5em #555; 
-  }
-  .nav > li:hover , .nav > li:hover >a{  border-bottom-color:orange;}
-  .nav li:hover > a { color:orange; }
-  .nav > li:first-child  { border-radius: 4px 0 0 4px;} 
-  .nav > li:first-child>a{border-radius: 4px 0 0 0;}
-  .nav > li:last-child  { 
-    border-radius: 0 0 4px 0; 
-    margin-right: 0;
-  } 
-  .nav > li:last-child >a{border-radius: 0 4px 0 0; }
-  .nav li li a { margin-top:1px}
-  
-  
-  
-    .nav li a:first-child:nth-last-child(2):before { 
-     content:""; 
-     position: absolute; 
-     height:0; 
-     width: 0; 
-     border: 5px solid transparent; 
-     top: 50% ;
-     right:5px;  
-   }
-   
-   
-   
-   
-   
-   /* submenu positioning*/
-.nav ul {
-  position: absolute;
-  white-space: nowrap;
-  border-bottom: 5px solid  orange;
-  z-index: 1;
-  left: -99999em;
-}
-.nav > li:hover > ul {
-  left: auto;
-  padding-top: 5px  ;
-  min-width: 100%;
-}
-.nav > li li ul {  border-left:1px solid #fff;}
-
-
-.nav > li li:hover > ul { 
- /* margin-left: 1px */
-  left: 100%;
-  top: -1px;
-}
-/* arrow hover styling */
-.nav > li > a:first-child:nth-last-child(2):before { 
-  border-top-color: #aaa; 
-}
-.nav > li:hover > a:first-child:nth-last-child(2):before {
-  border: 5px solid transparent; 
-  border-bottom-color: orange; 
-  margin-top:-5px
-}
-.nav li li > a:first-child:nth-last-child(2):before {  
-  border-left-color: #aaa; 
-  margin-top: -5px
-}
-.nav li li:hover > a:first-child:nth-last-child(2):before {
-  border: 5px solid transparent; 
-  border-right-color: orange;
-  right: 10px; 
 }
 
+.menu > li{
+    float: left;
+}
 
+.menu, .menu ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 
+.menu ul li+li{
+    border-top: 1px solid #fff;
+}
+
+.menu ul{
+    position: absolute;
+    box-shadow:  5px 5px 10px 0 rgba(0,0,0, 0.5);
+}
+
+.menu > li ul, .menu ul ul{
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.menu > li ul{
+    top: 130%;
+    left: 0;
+}
+
+.menu ul ul{
+    left: 130%;
+    top: 0;
+}
+
+.menu ul a{
+    width: 250px;
+}
+
+.menu > li:hover > ul{
+    top: 100%;
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+}
+
+.menu ul > li:hover > ul{
+    left: 100%;
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+}
+
+/* color set */
+.menu-gray, .menu-gray a{
+    background-color: #CCC;
+    color: #222;
+}
+.menu-gray a:hover{
+    background-color: #BBB;
+    color: #222;
+}
+
+.menu-tomato, .menu-tomato a{
+    background-color: Tomato;
+    color: #FFF;
+}
+.menu-tomato a:hover{
+    background-color: #ff3c1a;
+    color: #FFF;
+}
+
+.menu-dodgerblue, .menu-dodgerblue a{
+    background-color: dodgerblue;
+    color: #FFF;
+}
+.menu-dodgerblue a:hover{
+    background-color: #0080ff;
+    color: #FFF;
+}
+
+.menu-gold, .menu-gold a{
+    background-color: gold;
+    color: #000;
+}
+.menu-gold a:hover{
+    background-color: #e6c300;
+    color: #000;
+}
+
+.menu-limegreen, .menu-limegreen a{
+    background-color: limegreen;
+    color: #fff;
+}
+.menu-limegreen a:hover{
+    background-color: #28a428;
+    color: #fff;
+}
+
+.menu-crimson, .menu-crimson a{
+    background-color: crimson;
+    color: #fff;
+}
+.menu-crimson a:hover{
+    background-color: #bb1133;
+    color: #fff;
+}
+
+.menu-cadetblue, .menu-cadetblue a{
+    background-color: CadetBlue;
+    color: #fff;
+}
+.menu-cadetblue a:hover{
+    background-color: #4d7e80;
+    color: #fff;
+}
+
+.menu-indigo, .menu-indigo a{
+    background-color: indigo;
+    color: #fff;
+}
+.menu-indigo a:hover{
+    background-color: #3b0066;
+    color: #fff;
+}
+
+.menu-magenta, .menu-magenta a{
+    background-color: magenta;
+    color: #fff;
+}
+.menu-magenta a:hover{
+    background-color: #cc00cc;
+    color: #fff;
+}
+
+.menu-darkkhaki, .menu-darkkhaki a{
+    background-color: darkkhaki;
+    color: #fff;
+}
+.menu-darkkhaki a:hover{
+    background-color: #b0a94f;
+    color: #fff;
+}
+
+.menu-sandybrown, .menu-sandybrown a{
+    background-color: sandybrown;
+    color: #fff;
+}
+.menu-sandybrown a:hover{
+    background-color: #f29340;
+    color: #fff;
+}
+
+.menu-hotpink, .menu-hotpink a{
+    background-color: hotpink;
+    color: #fff;
+}
+.menu-hotpink a:hover{
+    background-color: #ff3399;
+    color: #fff;
+}
