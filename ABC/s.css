@@ -1,0 +1,56 @@
+/* *** 
+Solution For Very Long Dropdown Menus originally posted on CSS-Tricks 07/15/2011: https://css-tricks.com/convert-menu-to-dropdown/
+*** */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font: 300 21px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  width: 500px;
+  margin: 0 auto 15px;
+}
+
+nav {
+  display: block;
+  width: 960px;
+  margin: 100px auto;
+  text-align: center;
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid white;
+    text-decoration: none;
+    &:hover {
+      border: 1px solid red;
+      background: red;
+    }
+    &:active {
+      background: blue;
+    }
+  }
+  select {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  nav {
+    ul {
+      display: none;
+    }
+    select {
+      display: inline-block;
+    }
+  }
+}
