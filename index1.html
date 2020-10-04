@@ -3,9 +3,16 @@
 <link rel="stylesheet" href="ABC/style.css">
 <link rel="stylesheet" href="ABC/style1.css">
 <link rel="stylesheet" href="ABC/style3.css">
+<script>
+function blinker() {
+	$('.blinking').fadeOut(500);
+	$('.blinking').fadeIn(500);
+}
+setInterval(blinker, 1000);
+</script>
 <style>
-.button1 {
-  background-color: tomato;
+.button {
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 5px 10px;
@@ -16,8 +23,8 @@
   margin: 2px 1px;
   cursor: pointer;
 }
-.button {
-  background-color: #4CAF50;
+.button1 {
+  background-color: tomato;
   border: none;
   color: white;
   padding: 5px 10px;
@@ -78,61 +85,50 @@ tr,th{
 <div class="menu-bar">
   <ul class="nav">
     <li class="active"><a href="#">Home</a></li>
-
     <li><a href="#">Question Download</a>
       <ul>
-
-            <li><a href="#">B.A.(Gen)3rd Elective</a>
-		<UL>
-           	 <li><a href="./qn_gen/bngglast.pdf">Bengali(Paper-IV)</a></LI>
-           	 <li><a href="./qn_gen/engglast.pdf">English(Paper-IV)</a></LI>
-           	 <li><a href="./qn_gen/hisglast.pdf">History(Paper-IV)</a></LI>
-           	 <li><a href="./qn_gen/plsglast.pdf">Pol.Science(Paper-IV)</a></LI>
-           	 <li><a href="./qn_gen/edcglast.pdf">Education(Paper-IV)</a></LI>
-           	 <li><a href="./qn_gen/phiglast.pdf">Philosophy(Paper-IV)</a></LI>
-           	 <li><a href="./qn_gen/sanglast.pdf">Sanskrit(Paper-IV)</a></LI>
-           	 <li><a href="./qn_gen/pedglast.pdf">Ph.Education(Paper-IV)</a></LI>
-		</UL>
-	    </li>
-
-
-            <li><a href="#">B.Sc.(Gen)3rd Elective</a>
-		<UL>
-           	 <li><a href="./qn_gen/phsglast.pdf">Physics(Paper-IVA)</a></LI>
-           	 <li><a href="./qn_gen/cemglast.pdf">Chemistry(Paper-IV)</a></li>
-           	 <li><a href="./qn_gen/mtmglast.pdf">Math(Paper-IV)</a></li>
-           	 <li><a href="./qn_gen/cmsglast.pdf">Computer Sc.(Paper-IVA)</a></li>
-		 <li><a href="./qn_gen/zooglast.pdf">Zoology(Paper-IVA)</a></li>
-		 <li><a href="./qn_gen/botglast.pdf">Botany(Paper-IVA)</a></li>
-		 <li><a href="./qn_gen/geoglast.pdf">Geography(Paper-IV)</a></li>
-		 <li><a href="./qn_gen/ecoglast.pdf">Economics(Paper-IV)</a></li>
-		 <li><a href="./qn_gen/eltglast.pdf">Electronics(Paper-IVA)</a></li>
-		</UL>
-	    </li>
-
-
-       <li><a href="#">B.Com.(Hons)</a>
-		<ul>
-           	 <li><a href="./qn_hns/acta32a1.pdf">32A(Advanced Mathematics / Auditing)</a></LI>
+<li><a href="#">B.A.(Hons)</a>
+          	<ul>
+           	 <li><a href="a.jpg">Bengali(Paper-VII)</a></LI>
+           	 <li><a href="a.jpg">English(Paper-VII)</a></li>
+           	 <li><a href="a.jpg">History(Paper-VII)</a></li>
+           	 <li><a href="a.jpg">Pol.Science(Paper-VII)</a></li>
+		 <li><a href="a.jpg">Education(Paper-VII)</a></li>
+		 <li><a href="a.jpg">Philosophy(Paper-VII)</a></li>
 		</UL>
 	</li>
-       <li><a href="#">B.Com.(Gen)</a>
+        <li><a href="#">B.Sc.(Hons)</a>
+          	<ul>
+           	 <li><a href="a.jpg">Physics(Paper-VIIA)</a></LI>
+           	 <li><a href="a.jpg">Chemistry(Paper-VIIA)</a></li>
+           	 <li><a href="a.jpg">Math(Paper-VII:M-13 & 14)</a></li>
+		 <li><a href="a.jpg">Zoology Practical(Paper-VII)</a></li>
+		</UL>
+	</li>
+
+
+       <li><a href="#">B.Com.(Hons)Part-III</a>
 		<ul>
-          	 <li><a href="./qn_gen/bcomgenlast.pdf">Financial Management</a></LI>
+           	 <li><a href="a.jpg">33A (Indian Fin. System & Fin. Market Operations)</a></LI>
+		</UL>
+	</li>
+       <li><a href="#">B.Com.(Hons.& Gen)Sem-VI</a>
+		<ul>
+          	 <li><a href="a.jpg">DSE 6.1(A) Financial Reporting and Financial Statement Analysis</a></LI>
 		</UL>
 	  </li>
 
 
 
-  <!--     <li><a href="#">B.Ed.Sem-IV</a>
+  <li><a href="#">B.Ed.Sem-IV</a>
           <ul>
-            <li><a href="./qn_gen/bed1.pdf">C1.4.6-Gender School and Society</a></li>
-            <li><a href="./qn_gen/bed2.pdf">EPC3-Critical understanding of ICT</a></li>
+            <li><a href="a.jpg">C1.4.8-Knowledge and Curriculum-Part II</a></li>
+            <li><a href="a.jpg">EPC4-Understanding the self</a></li>
 	
           </ul>
         </li>
 
--->
+
 
 
 
@@ -156,77 +152,64 @@ tr,th{
     <li><a href="#">Answerscript Upload</a>
       <ul>
 
-            <li><a href="#">B.A.(Gen)3rd Elective</a>
-		<UL>
-           	 <li><a href="https://forms.gle/rYbmUAYKtVpM85CX6">Bengali(Paper-IV)</a></LI>
-           	 <li><a href="https://forms.gle/Aopa4t78qvBr7ePo7">English(Paper-IV)</a></LI>
-           	 <li><a href="https://forms.gle/aqQmtdAw3C9U5iy4A">History(Paper-IV)</a></LI>
-           	 <li><a href="https://forms.gle/nZfHEqkHcPKQBWWU6">Pol.Science(Paper-IV)</a></LI>
-           	 <li><a href="https://forms.gle/JsbdJS8FD3Gw5gb29">Education(Paper-IV)</a></LI>
-           	 <li><a href="https://forms.gle/JAmTWKvwtzAzGXaQ6">Philosophy(Paper-IV)</a></LI>
-           	 <li><a href="https://forms.gle/jvkjjZEfUsdCNUk4A">Sanskrit(Paper-IV)</a></LI>
-           	 <li><a href="https://forms.gle/2GbJMJKgrMhcvx416">Ph.Education(Paper-IV)</a></LI>
-		</UL>
-	    </li>
-
-
-
-            <li><a href="#">B.Sc.(Gen)3rd Elective</a>
-		<UL>
-           	 <li><a href="https://forms.gle/XHBSK2GgpDLAKsQd8">Physics(Paper-IVA)</a></LI>
-           	 <li><a href="https://forms.gle/AZoxUcMGJYuDzv7R8">Chemistry(Paper-IV)</a></li>
-           	 <li><a href="https://forms.gle/iiHVFSreHBDfw4kL9">Math(Paper-IV)</a></li>
-           	 <li><a href="https://forms.gle/fqxSniXiPCSneyKW9">Computer Sc.(Paper-IVA)</a></li>
-		 <li><a href="https://forms.gle/Qwse3Hw6UC8cGurk8">Zoology(Paper-IVA)</a></li>
-		 <li><a href="https://forms.gle/A4DwTJfyXHoqgZVy6">Botany(Paper-IVA)</a></li>
-		 <li><a href="https://forms.gle/5PxADi2EDnmRkPHy6">Geography(Paper-IV)</a></li>
-		 <li><a href="https://forms.gle/QDfGLnEmWCVWnrbM9">Economics(Paper-IV)</a></li>
-		 <li><a href="https://forms.gle/7uFPgqi6KYDsdmpD8">Electronics(Paper-IVA)</a></li>
-		</UL>
-	    </li>
-
-
-       <li><a href="#">B.Com.(Hons)</a>
-		<ul>
-           	 <li><a href="https://forms.gle/zAfGyamBSQ9BeSkt8">32A(Advanced Mathematics / Auditing)</a></LI>
+<li><a href="#">B.A.(Hons)</a>
+          	<ul>
+           	 <li><a href="https://forms.gle/SUYQ1uaxUQNdZ1wY7">Bengali(Paper-VII)</a></LI>
+           	 <li><a href="https://forms.gle/M5czjcYQSsUbCpF76">English(Paper-VII)</a></li>
+           	 <li><a href="https://forms.gle/cuGunmz7QMNP3N2w9">History(Paper-VII)</a></li>
+           	 <li><a href="https://forms.gle/XGEHacoPhF6LPqVp8">Pol.Science(Paper-VII)</a></li>
+		 <li><a href="https://forms.gle/nEZJgdhoGWykPj6f7">Education(Paper-VII)</a></li>
+		 <li><a href="https://forms.gle/6MohD266fvAJjoL98">Philosophy(Paper-VII)</a></li>
 		</UL>
 	</li>
-       <li><a href="#">B.Com.(Gen)</a>
+
+
+
+        <li><a href="#">B.Sc.(Hons)</a>
+          	<ul>
+           	 <li><a href="https://forms.gle/qoZevBsgBGMbPRM86">Physics(Paper-VIIA)</a></LI>
+           	 <li><a href="https://forms.gle/VKucenfFm9Y8niPB6">Chemistry(Paper-VIIA)</a></li>
+           	 <li><a href="https://forms.gle/xkM7y1KcQiedgQLg9">Math(Paper-VII:M-13 & 14)</a></li>
+		 <li><a href="https://forms.gle/h1Q935whjhZbuJHk9">Zoology Practical(Paper-VII)</a></li>
+		</UL>
+	</li>
+
+
+       <li><a href="#">B.Com.(Hons)Part-III</a>
 		<ul>
-          	 <li><a href="https://forms.gle/BE2cjUuXMjhsEsb29">Financial Management</a></LI>
+           	 <li><a href="https://forms.gle/TfeUpCrneQs3zVTi6">33A (Indian Fin. System & Fin. Market Operations)</a></LI>
+		</UL>
+	</li>
+       <li><a href="#">B.Com.(Hons.& Gen)Sem-VI</a>
+		<ul>
+          	 <li><a href="https://forms.gle/1zBpEeKJEFUYAsyLA">DSE 6.1(A) Financial Reporting and Financial Statement Analysis</a></LI>
 		</UL>
 	  </li>
 
 
-<!--
-       <li><a href="#">B.Ed.Sem-IV</a>
+
+  <li><a href="#">B.Ed.Sem-IV</a>
           <ul>
-            <li><a href="https://forms.gle/nSCcDVdDMMWSt3Ma6">Upload C1.4.6 and EPC-3</a></li>
-           <!-- <li><a href="./bed/bed2.pdf">EPC 3-Critical understanding of ICT</a></li>
-	-->
+            <li><a href="https://forms.gle/XtgBh5fyaoyYRPv67">C1.4.8 and EPC4 upload</a></li>
+
+	
           </ul>
         </li>
-
--->
-
 
 
 
 
 
       </ul>
+
 </li>
-
-
-
 
   </ul>
 </div>
 </nav>
 <HR><br>
-<a href="a.html" class="button1"><h2>Click Here for Practical Exam. Routine</h2></a>
+<a href="a.html" class="button1"><h2>Click Here for Practical Exam.</h2></a>
 <br><br>
-<br>
 
 
 <br>
