@@ -30,8 +30,64 @@
   margin: 2px 1px;
   cursor: pointer;
 }
-
-
+.button10 {
+  background-color: #4CAF50;
+  border: none;
+  color: White;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 1px;
+  cursor: pointer;
+  pointer-events: none;
+}
+.button101 {
+        background-color: #1c87c9;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 14px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+.button100 {
+        background-color: red;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        border: none;
+        color: blue;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 14px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+      .button101 {
+        animation: glowing 1500ms infinite;
+      }
 
 h3 {
   font-size: 28px;
@@ -76,22 +132,35 @@ tr,th{
 
 <IMG SRC="ABC/header-part1.jpg">
 <br><br>
-<h3>University of Calcutta <br><br> B.A. /B.Sc. / B.Com. Sem - I / III / V  Examination (IE & Tutorial) - 2022 (Under CBCS) <br></h3>
+<h3>University of Calcutta <br><br> B.A. / B.Sc. / B.Com. Sem - I / III / V (Under CBCS) / Part-I / Part-II & B.Ed. Examination -2021  <br></h3>
 <br>
+<h3>Examination Centre : Fakir Chand College (Code : 551)</h3> <br>
+
 <HR>
 <nav>
 <div class="menu-bar">
   <ul class="nav">
     <li class="active"><a href="#">Home</a></li>
 
-    <li><a href="routine.pdf" target="_blank">Routine</a></li>
-    <!--<li><a href= target="_blank">Instruction</a></li>-->
-   <li><a href="instruction.pdf" target="_blank">Instruction</a></li>
-  <!-- <li><a href="https://youtu.be/he_THN-NwyI">Video(Mobile user)</a></li>-->
-    <li><a href="https://youtu.be/1csur2vwMCQ">Video Guide</a></li>
-   <!-- <li><a href="https://youtu.be/VM8e5TzX7vg">Video(Mobile user)</a></li>
-    <li><a href="https://youtu.be/zFMxJpAcapo">Computer user</a></li>-->
-    <!--<li><a href="https://youtu.be/Ba3u73A1prg">LCC/AECC Guide(Computer user)</a></li>
+    <li><a href="">Routine</a>
+	<ul>
+	<li><a href="http://fakirchandcollege.org/images/pdf/BA_BSC_BCOM_2021_SEMESTER_III_EXAMINATION_SCHEDULE.pdf" target="_blank">Sem-III</a></li>
+	<li><a href="http://fakirchandcollege.org/images/pdf/BA_BSC_BCOM_2021_SEMESTER_V_EXAMINATION_SCHEDULE.pdf" target="_blank">Sem-V</a></li>
+	<li><a href="#" target="_blank">Part-I</a></li>
+	<li><a href="#" target="_blank">Part-II</a></li>
+	<li><a href="#" target="_blank">Practical</a></li>
+	<li><a href="#" target="_blank">B.Ed.</a></li>
+	</ul>
+   </li>
+     
+
+    <li><a href="./schedule/guide.pdf">Instruction</a></li>
+  <!-- <li><a href="http://fakirchandcollege.org/images/pdf/online-guideline-bn.pdf" target="_blank">Instruction</a></li>
+  <!-- <li><a href="#">Video(Mobile user)</a></li>-->
+  <!--  <li><a href="#">Computer user</a></li>-->
+<li><a href="https://youtu.be/IMhbsfVerw8">Video Guide</a></li>
+
+   <!--<li><a href="https://youtu.be/Ba3u73A1prg">LCC/AECC Guide(Computer user)</a></li>
 <li><a href="https://youtu.be/9dnMc9dbaDU">(Mobile user)</a></li>-->
 
   </ul>
@@ -99,24 +168,30 @@ tr,th{
 </nav>
 <HR><br>
 <a href="#" class="button1"><h2>Question Paper Download & Answerscript Upload </h2></a>
-<br><br><font color = white><h2>07/01/2022</h2><br><br>
-
-<a href="./internal.html" class="button"><h2>INTERNAL EXAMINATION  (IE)(Click Here)</h2></a>
-
-<br><br><a href="tt.html" class="button"><h2> TUTORIAL EXAMINATION(Click Here)</h2></a>
-<br><br><BR>
-<a href="tutorial.html" class="button"><h2>TUTORIAL / PROJECT UPLOAD (Click Here)</h2></a>
-<br>
-
-
-
-
-
-
-
-<br>
+<br><br><font color = white><h2>15 / 01 / 2022</h2><br><br>
+<!--
+<a href="#" class="button10"><h2>B.A. / B.SC. / B.Com. Semester-I (Click Here)</h2></a>
+<br><font color = white>-->
+<a href="sem3.html" class="button"><h2>B.A. / B.SC. / B.Com. Semester-III (Click Here)</h2></a>
 <br><br>
 
+<a href="sem5.html" class="button"><h2>B.A. / B.SC. / B.Com. Semester-V (Click Here)</h2></a>
+<br><br>
+
+<a href="part1.html" class="button"><h2>B.A. / B.SC. / B.Com. Part-I (Click Here)</h2></a>
+<br><br>
+
+<a href="part2.html" class="button"><h2>B.A. / B.SC. / B.Com. Part-II (Click Here)</h2></a>
+
+<br><br>
+
+<a href="bed.html" class="button"><h2>B.Ed. Semester-I (Click Here)</h2></a>
+<!--<br>(11am - 11:30am)-->
+<br><br>
+<a href="practical.html" class="button101"><h2>Practical Examination (Click Here)</h2></a>
+<br>
+
+<br><br>
 
 <!--
 <table>
